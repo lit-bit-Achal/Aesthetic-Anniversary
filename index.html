@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fdfaf6;
+            color: #333;
+        }
+
+        /* Textured Background */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-image: radial-gradient(circle, #f5e6cc 10%, #ffffff 100%);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #b33939;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 0;
+        }
+
+        /* Typing Effect */
+        .typing-effect {
+            display: inline-block;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #555;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #333;
+            animation: typing 4s steps(40, end), blink 0.7s step-end infinite alternate;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            from { border-color: transparent; }
+            to { border-color: #333; }
+        }
+
+        /* Buttons */
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            background: #d35400;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: transform 0.3s ease, background 0.3s ease;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background: #e67e22;
+        }
+
+        /* Message Box */
+        .message {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #d35400;
+        }
+
+        /* Interactive Banner */
+        .interactive-banner {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .interactive-banner div {
+            background: #f7d794;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .interactive-banner div:hover {
+            background: #f6b93b;
+            transform: translateY(-5px);
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff8e1;
+            color: #7f8c8d;
+            font-size: 1rem;
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .fadeInUp {
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Marriage Anniversary!</h1>
+        <p class="typing-effect">Celebrating a beautiful journey since 11 December 2020...</p>
+    </header>
+
+    <div class="container">
+        <p class="fadeInUp">
+            <strong>Dear Mama and Mami,</strong>
+            <br><br>
+            On <span style="color: #d35400;">11 December 2020</span>, you started a wonderful chapter of your lives together. Today, I celebrate not only that special day but also the happiness you bring into all of our lives.
+        </p>
+
+        <p class="fadeInUp">
+            Wishing you endless joy, laughter, and cherished memories. Thank you for being the most amazing Mama and Mami ever!
+        </p>
+
+        <!-- Interactive Section -->
+        <div class="interactive-banner fadeInUp">
+            <div onclick="showMessage('Your smiles light up every room! 😊')">Click Me!</div>
+            <div onclick="showMessage('Here’s to many more years of togetherness! 🥳')">Click Me!</div>
+            <div onclick="showMessage('May your journey always be magical! ✨')">Click Me!</div>
+        </div>
+
+        <p class="message" id="message"></p>
+
+        <div class="buttons fadeInUp">
+            <button class="btn" onclick="alert('Sending warm wishes your way! 🥰')">Send Warm Wishes</button>
+            <button class="btn" onclick="alert('You really thought i can be this nice and give compliments?! 🌟')">Send Compliments</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with care by Achal</p>
+    </footer>
+
+    <script>
+        function showMessage(msg) {
+            const message = document.getElementById('message');
+            message.textContent = msg;
+            message.style.color = '#d35400';
+        }
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
